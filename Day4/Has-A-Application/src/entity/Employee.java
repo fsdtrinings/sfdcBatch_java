@@ -70,7 +70,17 @@ public class Employee {
 
 	
 	public String toString() {
-		return empId+" "+empName+" "+email+" "+p.getId()+" "+p.getProjectName();
+		
+		if(p != null)
+		{
+			return empId+" "+empName+" "+email+" "+p.getId()+" "+p.getProjectName();
+		}
+		else if(p == null)
+		{
+			return empId+" "+empName+" "+email+"  , Employee on Bench";
+		}
+		
+		return "";
 	}
 	
 	

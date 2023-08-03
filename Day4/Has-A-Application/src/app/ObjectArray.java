@@ -33,8 +33,15 @@ public class ObjectArray {
 		
 		Employee allEmployees[] = {e1,e2,e3,e4,e5,e6};
 		
-		System.out.println("Enter the Project Id to be Searched for :- ");
+		/*
+		System.out.println("\n\n  Enter the Project Id to be Searched for :- ");
 		obj.getEmployeesBasedOnProjectId(allEmployees, new Scanner(System.in).nextInt());
+		*/
+		
+		System.out.println("\n\n  Employees on Bench :- ");
+		obj.getEmployeesWithNoProject(allEmployees);
+		
+		
 	}//end of main
 	
 	
